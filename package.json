@@ -8,6 +8,7 @@
     "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
   },
   "repository": {
+    
     "type": "git",
     "url": "git+https://github.com/Pavel9118/goit-js-hw-09.git"
   },
