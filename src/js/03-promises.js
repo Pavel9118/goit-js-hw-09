@@ -22,6 +22,7 @@ function onBtnSubmit(event) {
   const delay = event.target.elements.delay.value;
   const step = event.target.elements.step.value;
   const amount = event.target.elements.amount.value;
+  
 
   for (let i = 1; i <= amount; i += 1) {
     createPromise(i, delay)
