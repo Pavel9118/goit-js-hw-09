@@ -12,12 +12,7 @@ form.addEventListener('submit', onBtnSubmit);
 function onBtnSubmit(event) {
     event.preventDefault();
 
-  // console.log(event.target.elements.delay.value);
-  // console.log(event.target.elements.step.value);
-  // console.log(event.target.elements.amount.value);
-  // Notiflix.Notify.warning('Заповніть всі поля форми');
-  // Notiflix.Notify.success('✅ Fulfilled');
-  // Notiflix.Notify.failure('❌ Rejected');
+ 
 
   const delay = event.target.elements.delay.value;
   const step = event.target.elements.step.value;

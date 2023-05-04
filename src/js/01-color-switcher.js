@@ -29,9 +29,10 @@ timerId = setInterval(onChangeBody, 1000);
 };
 
 function onStop() {
+  clearInterval(timerId);
   refs.start.disabled = false;
   refs.stop.disabled = true;
-  clearInterval(timerId);
+  
   
 };
 
