@@ -22,9 +22,10 @@ function onChangeBody() {
   };
 
 function onStart() {
+  timerId = setInterval(onChangeBody, 1000);
   refs.start.disabled = true;
   refs.stop.disabled = false;
-timerId = setInterval(onChangeBody, 1000);
+
 
 };
 

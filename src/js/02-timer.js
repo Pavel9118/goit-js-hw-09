@@ -73,7 +73,12 @@ function addLeadingZero(value) {
 };
 
 function addYearZero(value) {
-  return String(value).padStart(3, "0");
+  if (value > 99) {
+ return String(value).padStart(3, "0");
+  } else {
+    return String(value).padStart(2, "0");
+  }
+ 
 };
 
 console.log("heloo");
