@@ -2,7 +2,8 @@ const refs = {
   start: document.querySelector('button[data-start]'),
   stop: document.querySelector('button[data-stop]'),
   bodyColor: document.querySelector('body'),
-}
+};
+let timerId = null;
 // console.log(refs.start);
 // console.log(refs.stop);
 // console.log(refs.bodyColor);
