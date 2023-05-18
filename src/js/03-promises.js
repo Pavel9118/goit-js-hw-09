@@ -1,22 +1,16 @@
 import Notiflix from 'notiflix';
 
-
-
-
 const form = document.querySelector('.form');
-
-
 form.addEventListener('submit', onBtnSubmit);
-
 
 function onBtnSubmit(event) {
     event.preventDefault();
 
  
 
-  const delay = event.target.elements.delay.value;
-  const step = event.target.elements.step.value;
-  const amount = event.target.elements.amount.value;
+  let delay = Number(event.target.elements.delay.value);
+  const step = Number(event.target.elements.step.value);
+  const amount = Number(event.target.elements.amount.value);
   
 
   for (let i = 1; i <= amount; i += 1) {
@@ -27,7 +21,7 @@ function onBtnSubmit(event) {
   .catch(({ position, delay }) => {
     Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
   });
-
+    delay += step;
   }
 
 };
@@ -42,7 +36,7 @@ function createPromise(position, delay) {
       } else {
         reject({ position, delay })
       }
-    }, delay * position);
+    }, delay);
   });
 };
 
