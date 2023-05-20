@@ -4,7 +4,8 @@ const form = document.querySelector('.form');
 form.addEventListener('submit', onBtnSubmit);
 
 function onBtnSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
+  
 
  
 
