@@ -52,7 +52,7 @@ refs.startBtn.addEventListener('click', updateOnClick);
 
 function updateOnClick() {
   intervalID = setInterval(countDownTime, 1000);
-  // refs.inputDateEl.disabled = true;
+  refs.inputDateEl.disabled = true;
 
 };
 
