@@ -52,7 +52,7 @@ refs.startBtn.addEventListener('click', updateOnClick);
 
 function updateOnClick() {
   intervalID = setInterval(countDownTime, 1000);
-  refs.inputDateEl.disabled = true;
+  // refs.inputDateEl.disabled = true;
 
 };
 
@@ -61,9 +61,9 @@ function updateOnClick() {
 function countDownTime() {
   const now = new Date();
   const difTime = fP.selectedDates[0] - now;
-  console.log(now);
-  console.log(fP.selectedDates[0]);
-  console.log(difTime);
+  // console.log(now);
+  // console.log(fP.selectedDates[0]);
+  // console.log(difTime);
   const time = convertMs(difTime);
   refs.dataDay.textContent = addLeadingZero(time.days);
   refs.dataHour.textContent = addLeadingZero(time.hours);
@@ -71,13 +71,14 @@ function countDownTime() {
   refs.dataSecond.textContent = addLeadingZero(time.seconds);
  
   if (difTime < 0) {
+    console.log('DANGER!!!')
     refs.startBtn.disabled = true;
     clearInterval(intervalID);
   refs.dataDay.textContent = '00';
   refs.dataHour.textContent = '00';
   refs.dataMinute.textContent = '00';
   refs.dataSecond.textContent = '00';
- 
+    return;
 
 }
   
