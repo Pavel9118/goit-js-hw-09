@@ -17,8 +17,8 @@ const refs = {
   dataSecond: document.querySelector('[data-seconds]'),
 
 };
-let userTime = 'null';
-let intervalID = 'null';
+let userTime = null;
+let intervalID = null;
 refs.timer.style.display = "flex";
 refs.timer.style.paddingTop = "50px";
 refs.dataDay.style.fontSize = "50px";
