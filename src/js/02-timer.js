@@ -18,6 +18,7 @@ const refs = {
 
 };
 let userTime = 'null';
+let intervalID = 'null';
 refs.timer.style.display = "flex";
 refs.timer.style.paddingTop = "50px";
 refs.dataDay.style.fontSize = "50px";
